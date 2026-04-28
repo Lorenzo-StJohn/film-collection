@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 .home-header {
   width: 100%;
   max-width: var(--crumb-width);
-  padding: 0 20px;
 }
 
-.search-input {
+.filter-input {
   padding: 10px;
   width: 100%;
   border-radius: 0;
@@ -21,7 +21,7 @@
   font-size: 1rem;
 }
 
-.search-input:focus-visible {
+.filter-input:focus-visible {
   border-bottom-color: var(--primary-color);
 }
 
@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0;
   max-width: 1400px;
 }
 
