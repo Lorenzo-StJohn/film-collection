@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Runaways",
+    "year": 2017,
+    "genre": "Superhero",
+    "rating": 6.8,
+    "duration": 53,
+    "description": "After discovering a dark secret about their parents, a group of teenagers band together to run away from their homes in order to atone for their parents' actions and to discover the secrets of their origins.",
+    "posterUrl": "runaways.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 2,
+    "title": "The Vampire Diaries",
+    "year": 2015,
+    "genre": "Drama",
+    "rating": 7.7,
+    "duration": 42,
+    "description": "The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakable horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers.",
+    "posterUrl": "vampire-diaries.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 3,
+    "title": "The Other Mother",
+    "year": 2017,
+    "genre": "Drama",
+    "rating": 5.8,
+    "duration": 86,
+    "description": "A divorcee is surprised to learn that her ex-husband has suddenly remarried a much younger woman--and more shocked to discover her dark and treacherous past.",
+    "posterUrl": "other-mother.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 4,
+    "title": "Star Trek: Picard",
+    "year": 2022,
+    "genre": "Sci-Fi",
+    "rating": 7.5,
+    "duration": 46,
+    "description": "Follow-up to Star Trek: The Next Generation (1987) that centers on Jean-Luc Picard in the next chapter of his life.",
+    "posterUrl": "picard.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 5,
+    "title": "The Rookie",
+    "year": 2019,
+    "genre": "Action",
+    "rating": 8.0,
+    "duration": 43,
+    "description": "Starting over isn't easy, especially for John Nolan who, after a life-altering incident, is pursuing his dream of joining the LAPD. As their oldest rookie, he's met with skepticism from those who see him as just a walking midlife crisis.",
+    "posterUrl": "rookie.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 6,
+    "title": "24",
+    "year": 2009,
+    "genre": "Action",
+    "rating": 8.4,
+    "duration": 53,
+    "description": "Counter Terrorism Agent Jack Bauer races against the clock to subvert terrorist plots and save his nation from ultimate disaster.",
+    "posterUrl": "24.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 7,
+    "title": "Timeless",
+    "year": 2017,
+    "genre": "Action",
+    "rating": 7.6,
+    "duration": 42,
+    "description": "A team including Professor Lucy Preston, her bodyguard Wyatt Logan and engineer Rufus Carlin go back in time to capture Garcia Flynn after he steals a time machine to change American history.",
+    "posterUrl": "timeless.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 8,
+    "title": "Castle",
+    "year": 2013,
+    "genre": "Crime",
+    "rating": 8.1,
+    "duration": 45,
+    "description": "Successful author Richard Castle teams up with NYPD Detective Kate Beckett to solve complex murder cases.",
+    "posterUrl": "castle.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 9,
+    "title": "Bosch",
+    "year": 2014,
+    "genre": "Crime",
+    "rating": 8.5,
+    "duration": 50,
+    "description": "Follows LAPD Detective Harry Bosch as he investigates gruesome murders in the City of Angels.",
+    "posterUrl": "bosch.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 10,
+    "title": "Extant",
+    "year": 2014,
+    "genre": "Drama",
+    "rating": 6.5,
+    "duration": 42,
+    "description": "An astronaut struggles to learn how she became pregnant while on a thirteen-month-long solo space mission.",
+    "posterUrl": "extant.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 11,
+    "title": "The Surrogate",
+    "year": 2013,
+    "genre": "Drama",
+    "rating": 4.6,
+    "duration": 90,
+    "description": "A married couple, struggling to have a child, hires a young woman to be their surrogate, but soon discovers she has a bizarre and deadly agenda.",
+    "posterUrl": "surrogate.webp",
+    "isFavorite": false
+  },
+  {
+    "id": 12,
+    "title": "Dallas",
+    "year": 2013,
+    "genre": "Drama",
+    "rating": 7.3,
+    "duration": 42,
+    "description": "The Ewing family, a cattle and oil dynasty, occupies the expansive Southfork Ranch in Texas.",
+    "posterUrl": "dallas.webp",
+    "isFavorite": false
+  }
+]
