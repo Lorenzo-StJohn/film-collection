@@ -1,0 +1,48 @@
+:host {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-paragraph {
+  max-width: 900px;
+  text-align: justify;
+    color: var(--text-color);
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.about-paragraph:first-of-type:first-letter {
+  color: var(--primary-color);
+}
+
+.github-link {
+  color: var(--primary-color);
+  font-weight: 700;
+  position: relative;
+}
+
+.github-link:before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 1.125rem;
+  left: -2px;
+  transition: var(--transition);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .github-link:hover:before {
+     width: calc(100% + 4px);
+  }
+}
