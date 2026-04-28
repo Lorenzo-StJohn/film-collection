@@ -7,15 +7,16 @@ import { NavigationEnd, Router, UrlSegment } from '@angular/router';
 export class BreadcrumbService {
   private router = inject(Router);
   private destroyRef = inject(DestroyRef);
-  public readonly breadcrumbs = signal<string>("");
+  private breadcrumbsSignal = signal<string>("");
+  public readonly breadcrumbs = this.breadcrumbsSignal.asReadonly();
 
   constructor() {
     const url = this.router.routerState.snapshot.url;
-    this.breadcrumbs.set(url);
+    this.breadcrumbsSignal.set(url);
     const subscription = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
        const url = this.router.routerState.snapshot.url;
-        this.breadcrumbs.set(url);
+        this.breadcrumbsSignal.set(url);
       }
     });
     this.destroyRef.onDestroy(() => subscription.unsubscribe());

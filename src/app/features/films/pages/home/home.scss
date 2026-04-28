@@ -7,6 +7,7 @@
 .home-header {
   width: 100%;
   max-width: var(--crumb-width);
+  padding: 0 20px;
 }
 
 .search-input {
@@ -22,4 +23,17 @@
 
 .search-input:focus-visible {
   border-bottom-color: var(--primary-color);
+}
+
+.film-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1400px;
+}
+
+.film-link {
+  display: contents;
 }

@@ -3,3 +3,10 @@
     <input appAutofocus formControlName="search" placeholder="Search by title..." class="search-input" name="search-input"  />
   </form>
 </header>
+<main class="film-list">
+  @for (film of films(); track film.id) {
+    <a [routerLink]="['home', film.id]" class="film-link">
+      <app-film-card [film]="film"/>
+    </a>
+  }
+</main>
