@@ -6,4 +6,13 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/about/about').then((module) => module.About),
   },
+     {
+    path: 'home',
+    loadComponent: () =>
+      import('./features/films/pages/home/home').then((module) => module.Home),
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
+  }
 ];
