@@ -1,10 +1,10 @@
 <header class="home-header">
-    <input appAutofocus placeholder="Filter by title..." class="filter-input" name="filter-input" [(ngModel)]="filter" />
+  <input appAutofocus placeholder="Filter by title..." class="filter-input" name="filter-input" [(ngModel)]="filter" />
 </header>
 <main class="film-list">
   @for (film of films(); track film.id) {
     <a [routerLink]="['home', film.id]" class="film-link">
-      <app-film-card [film]="film"/>
+      <app-film-card [film]="film" (favToggle)="onFavToggle(film.id,  $event)"/>
     </a>
   }
   @empty {

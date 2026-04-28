@@ -22,4 +22,8 @@ export class Home {
   public films = computed(() => {
     return this.filmsUnfiltered().filter(film => film.title.toLowerCase().includes(this.filter().toLowerCase()));
   });
+
+  public onFavToggle(id: number, value: boolean) {
+    this.filmService.favToggle(id, value);
+  }
 }

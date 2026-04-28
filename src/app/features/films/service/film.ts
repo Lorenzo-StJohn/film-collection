@@ -11,7 +11,7 @@ export class Film {
   public readonly films = this.filmsSignal.asReadonly();
 
 
-   loadMockFilms(): Promise<any[]> {
+  public loadMockFilms(): Promise<any[]> {
     return new Promise((resolve, reject) => {
       this.http.get<FilmInterface[]>('films.json').subscribe({
         next: (data) => {
@@ -21,5 +21,15 @@ export class Film {
         error: (err) => reject(err),
       });
     });
+   }
+
+  public favToggle(id: number, isFavorite: boolean) {
+    this.filmsSignal.update(films =>
+      films.map(film =>
+        film.id === id
+          ? { ...film, isFavorite }
+          : film
+      )
+    );
   }
 }
