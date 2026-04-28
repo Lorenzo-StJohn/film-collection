@@ -1,0 +1,5 @@
+<section class="breadcrumbs">
+  @for (breadcrumb of breadcrumbs(); track breadcrumb[0]) {
+     <a [routerLink]='breadcrumb[0]' class="crumb-link">» {{breadcrumb[1]}}</a>
+  }
+</section>

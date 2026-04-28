@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: var(--crumb-width);
+  flex-wrap: wrap;
+}
+
+.crumb-link {
+  color: var(--text-color);
+  transition: var(--transition);
+  font-size: 0.75rem;
+}
+
+.crumb-link:last-of-type {
+  font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .crumb-link:hover {
+    color: var(--primary-color);
+  }
+}
