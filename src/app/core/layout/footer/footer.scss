@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 40px;
+  justify-content: center;
+}
+
+
+.github-icon {
+  background-color: var(--text-color);
+  width: 30px;
+  height: 30px;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  transition: var(--transition);
+  mask-image: url('../../../../assets/github-svgrepo-com.svg');
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.github-link:hover {
+  color: var(--primary-color);
+  .github-icon {
+    background-color: var(--primary-color);
+  }
+}
+
+.year {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  :host {
+    gap: 20px;
+  }
+}
