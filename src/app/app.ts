@@ -1,4 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
+
 import { Layout } from './core/layout/layout';
 import { Film } from './features/films/service/film';
 
@@ -13,6 +14,6 @@ export class App implements OnInit {
   private filmService = inject(Film);
 
   public ngOnInit() {
-    this.filmService.loadMockFilms();
+    void this.filmService.loadMockFilms();
   }
 }

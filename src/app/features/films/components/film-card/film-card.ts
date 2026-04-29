@@ -1,7 +1,8 @@
 import { Component, input, output } from '@angular/core';
-import { FilmInterface } from '../../models/film';
 import { FormsModule } from '@angular/forms';
 import { NgClass } from '@angular/common';
+
+import { FilmInterface } from '../../models/film';
 
 @Component({
   selector: 'app-film-card',
