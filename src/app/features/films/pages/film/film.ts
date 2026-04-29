@@ -2,10 +2,11 @@ import { Component, inject, input, OnInit } from '@angular/core';
 import { Film as filmService } from '../../service/film';
 import { FilmInterface } from '../../model/film';
 import { Router, RouterLink } from '@angular/router';
+import { DurationPipe } from '../../../../shared/pipes/duration-pipe';
 
 @Component({
   selector: 'app-film',
-  imports: [RouterLink],
+  imports: [RouterLink, DurationPipe],
   templateUrl: './film.html',
   styleUrl: './film.scss',
 })

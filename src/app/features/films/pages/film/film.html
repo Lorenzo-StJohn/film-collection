@@ -6,7 +6,7 @@
     <p><span class="bold">Year: </span>{{film.year}}</p>
     <p><span class="bold">Genre: </span>{{film.genre}}</p>
     <p><span class="bold">Rating: </span>{{film.rating}}</p>
-    <p><span class="bold">Duration: </span>{{film.duration}}</p>
+    <p><span class="bold">Duration: </span>{{film.duration | duration}}</p>
     <p><span class="bold">Description: </span>{{film.description}}</p>
     <img [src]="film.posterUrl" [alt]="film.title" class="poster">
   }
