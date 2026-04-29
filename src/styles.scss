@@ -22,6 +22,24 @@
   font-display: swap;
 }
 
+::selection {
+  background-color: var(--primary-color);
+  color: var(--light-bg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
 * {
   padding: 0;
   margin: 0;
