@@ -10,7 +10,16 @@
   </button>
 </header>
 <div class="img-wrapper">
-  <img class="film-img" [src]="film().posterUrl" [alt]="film().title" />
+  @if (!posterLoaded()) {
+    <div class="poster-skeleton"></div>
+  }
+  <img
+    class="film-img"
+    [src]="film().posterUrl"
+    [alt]="film().title"
+    [class.hidden]="!posterLoaded()"
+    (load)="posterLoaded.set(true)"
+  />
 </div>
 <div class="info">
   <p>{{ film().year }}</p>
