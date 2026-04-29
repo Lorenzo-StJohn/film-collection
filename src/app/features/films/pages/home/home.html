@@ -1,4 +1,5 @@
 <header class="home-header">
+  <h2 class="title">Total films: {{filmsUnfiltered().length}} | Favorites: {{filmsFavorite().length}}</h2>
   <input appAutofocus placeholder="Filter by title..." class="filter-input" name="filter-input" [(ngModel)]="filter" />
 </header>
 <main class="film-list">

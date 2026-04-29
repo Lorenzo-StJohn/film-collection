@@ -8,6 +8,18 @@
 .home-header {
   width: 100%;
   max-width: var(--crumb-width);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 .filter-input {

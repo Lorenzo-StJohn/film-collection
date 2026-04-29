@@ -16,7 +16,8 @@ export class Home {
   @ViewChild('searchInput') searchInput!: ElementRef<HTMLInputElement>;
 
   private filmService = inject(Film)
-  private filmsUnfiltered = this.filmService.films;
+  public filmsUnfiltered = this.filmService.films;
+  public filmsFavorite = this.filmService.filmsFavorite;
 
   public filter = signal('');
   public films = computed(() => {
