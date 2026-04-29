@@ -13,7 +13,7 @@ export class Film {
     return this.films().filter((film) => film.isFavorite);
   });
 
-  public loadMockFilms(): Promise<any[]> {
+  public loadMockFilms(): Promise<FilmInterface[]> {
     return new Promise((resolve, reject) => {
       this.http.get<FilmInterface[]>('films.json').subscribe({
         next: (data) => {
