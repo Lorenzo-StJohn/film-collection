@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, signal } from '@angular/core';
-import { FilmInterface } from '../model/film';
+import { FilmInterface } from '../models/film';
 
 @Injectable({
   providedIn: 'root',
