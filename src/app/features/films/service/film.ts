@@ -10,8 +10,8 @@ export class Film {
   private filmsSignal = signal<FilmInterface[]>([]);
   public readonly films = this.filmsSignal.asReadonly();
   public filmsFavorite = computed(() => {
-    return this.films().filter(film => film.isFavorite);
-  })
+    return this.films().filter((film) => film.isFavorite);
+  });
 
   public loadMockFilms(): Promise<any[]> {
     return new Promise((resolve, reject) => {
@@ -23,15 +23,11 @@ export class Film {
         error: (err) => reject(err),
       });
     });
-   }
+  }
 
   public favToggle(id: number, isFavorite: boolean) {
-    this.filmsSignal.update(films =>
-      films.map(film =>
-        film.id === id
-          ? { ...film, isFavorite }
-          : film
-      )
+    this.filmsSignal.update((films) =>
+      films.map((film) => (film.id === id ? { ...film, isFavorite } : film)),
     );
   }
 
@@ -40,6 +36,6 @@ export class Film {
     if (id.toString() !== url) {
       return null;
     }
-    return this.filmsSignal().find(film => film.id === id);
+    return this.filmsSignal().find((film) => film.id === id);
   }
 }

@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-   {
+  {
     path: 'about',
-    loadComponent: () =>
-      import('./features/about/about').then((module) => module.About),
+    loadComponent: () => import('./features/about/about').then((module) => module.About),
   },
   {
     path: 'home',
@@ -17,14 +16,12 @@ export const routes: Routes = [
       {
         path: ':filmId',
         loadComponent: () =>
-          import('./features/films/pages/film/film').then(
-            (module) => module.Film,
-          ),
+          import('./features/films/pages/film/film').then((module) => module.Film),
       },
     ],
   },
   {
     path: '**',
     redirectTo: '/home',
-  }
+  },
 ];

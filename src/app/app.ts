@@ -1,12 +1,12 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { Layout } from "./core/layout/layout";
+import { Layout } from './core/layout/layout';
 import { Film } from './features/films/service/film';
 
 @Component({
   selector: 'app-root',
-  imports: [ Layout],
+  imports: [Layout],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App implements OnInit {
   protected readonly title = signal('film-collection');

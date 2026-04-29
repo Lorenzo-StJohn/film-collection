@@ -1,17 +1,18 @@
 <header class="header-card">
-  <p class="film-title">{{film().title}}</p>
-  <img src="game-gamepad-gaming-svgrepo-com.svg"
-       alt="favorites toggle" class="fav"
-       [ngClass]="{isFavorite: film().isFavorite}"
-       (click)="onClick();
-       $event.stopPropagation();
-       $event.preventDefault()">
+  <p class="film-title">{{ film().title }}</p>
+  <img
+    src="game-gamepad-gaming-svgrepo-com.svg"
+    alt="favorites toggle"
+    class="fav"
+    [ngClass]="{ isFavorite: film().isFavorite }"
+    (click)="onClick(); $event.stopPropagation(); $event.preventDefault()"
+  />
 </header>
 <div class="img-wrapper">
-  <img class="film-img" [src]="film().posterUrl" [alt]="film().title">
+  <img class="film-img" [src]="film().posterUrl" [alt]="film().title" />
 </div>
 <div class="info">
-  <p>{{film().year}}</p>
-  <p>{{film().genre}}</p>
-  <p>{{film().rating}}</p>
+  <p>{{ film().year }}</p>
+  <p>{{ film().genre }}</p>
+  <p>{{ film().rating }}</p>
 </div>

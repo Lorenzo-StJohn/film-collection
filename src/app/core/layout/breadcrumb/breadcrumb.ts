@@ -15,7 +15,7 @@ export class Breadcrumb {
   public breadcrumbString = this.breadcrumbService.breadcrumbs;
   private breadcrumbArray = computed(() => this.breadcrumbString().split('/'));
   public breadcrumbs = computed(() => {
-    const initialArray:[string, string][] = [];
+    const initialArray: [string, string][] = [];
     return this.breadcrumbArray().reduce((acc, value, index) => {
       if (index === 1) {
         switch (value) {
@@ -34,6 +34,6 @@ export class Breadcrumb {
         acc.push([`/home/${value}`, title]);
       }
       return acc;
-    }, initialArray)
-  })
+    }, initialArray);
+  });
 }

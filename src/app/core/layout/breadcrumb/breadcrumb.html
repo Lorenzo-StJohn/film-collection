@@ -1,10 +1,9 @@
 <section class="breadcrumbs">
   @for (breadcrumb of breadcrumbs(); track breadcrumb[0]; let i = $index) {
     @if ($last) {
-       <span class="crumb-last">» {{breadcrumb[1]}}</span>
-    }
-    @else {
-      <a [routerLink]='breadcrumb[0]' class="crumb-link">» {{breadcrumb[1]}}</a>
+      <span class="crumb-last">» {{ breadcrumb[1] }}</span>
+    } @else {
+      <a [routerLink]="breadcrumb[0]" class="crumb-link">» {{ breadcrumb[1] }}</a>
     }
   }
 </section>

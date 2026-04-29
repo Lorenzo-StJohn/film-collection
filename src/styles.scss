@@ -22,7 +22,6 @@
   font-display: swap;
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -30,10 +29,15 @@
 }
 
 body {
-  font-family: 'SegoeUI', 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    'SegoeUI',
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
   font-size: 16px;
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }

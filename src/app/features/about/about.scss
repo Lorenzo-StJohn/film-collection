@@ -9,7 +9,7 @@
 .about-paragraph {
   max-width: var(--crumb-width);
   text-align: justify;
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .title {
@@ -43,6 +43,6 @@
 
 @media (hover: hover) and (pointer: fine) {
   .github-link:hover:before {
-     width: calc(100% + 4px);
+    width: calc(100% + 4px);
   }
 }

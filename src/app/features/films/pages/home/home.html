@@ -1,14 +1,21 @@
 <header class="home-header">
-  <h2 class="title">Total films: {{filmsUnfiltered().length}} | Favorites: {{filmsFavorite().length}}</h2>
-  <input appAutofocus placeholder="Filter by title..." class="filter-input" name="filter-input" [(ngModel)]="filter" />
+  <h2 class="title">
+    Total films: {{ filmsUnfiltered().length }} | Favorites: {{ filmsFavorite().length }}
+  </h2>
+  <input
+    appAutofocus
+    placeholder="Filter by title..."
+    class="filter-input"
+    name="filter-input"
+    [(ngModel)]="filter"
+  />
 </header>
 <main class="film-list">
   @for (film of films(); track film.id) {
     <a [routerLink]="film.id.toString()" class="film-link">
-      <app-film-card [film]="film" (favToggle)="onFavToggle(film.id,  $event)"/>
+      <app-film-card [film]="film" (favToggle)="onFavToggle(film.id, $event)" />
     </a>
-  }
-  @empty {
+  } @empty {
     <p class="empty">Nothing found</p>
   }
 </main>

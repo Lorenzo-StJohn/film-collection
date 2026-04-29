@@ -12,11 +12,11 @@
   overflow: hidden;
 }
 
-  .film-img,
-  .img-wrapper {
-    width: calc(100vw - 40px);
-    height: calc((100vw - 40px) * 2 / 3)
-  }
+.film-img,
+.img-wrapper {
+  width: calc(100vw - 40px);
+  height: calc((100vw - 40px) * 2 / 3);
+}
 
 .film-title {
   color: var(--text-color);
