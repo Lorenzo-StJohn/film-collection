@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable, signal } from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import { FilmInterface } from '../model/film';
 
 @Injectable({
@@ -9,7 +9,9 @@ export class Film {
   private http = inject(HttpClient);
   private filmsSignal = signal<FilmInterface[]>([]);
   public readonly films = this.filmsSignal.asReadonly();
-
+  public filmsFavorite = computed(() => {
+    return this.films().filter(film => film.isFavorite);
+  })
 
   public loadMockFilms(): Promise<any[]> {
     return new Promise((resolve, reject) => {
