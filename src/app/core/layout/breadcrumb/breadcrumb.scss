@@ -18,7 +18,9 @@
   font-size: 0.75rem;
 }
 
-.crumb-link:last-of-type {
+.crumb-last {
+  color: var(--text-color);
+  font-size: 0.75rem;
   font-weight: 700;
 }
 

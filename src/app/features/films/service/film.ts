@@ -32,4 +32,12 @@ export class Film {
       )
     );
   }
+
+  public getFilmByUrl(url: string) {
+    const id = parseInt(url);
+    if (id.toString() !== url) {
+      return null;
+    }
+    return this.filmsSignal().find(film => film.id === id);
+  }
 }

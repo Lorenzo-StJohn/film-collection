@@ -6,10 +6,22 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/about/about').then((module) => module.About),
   },
-     {
+  {
     path: 'home',
-    loadComponent: () =>
-      import('./features/films/pages/home/home').then((module) => module.Home),
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/films/pages/home/home').then((module) => module.Home),
+      },
+      {
+        path: ':filmId',
+        loadComponent: () =>
+          import('./features/films/pages/film/film').then(
+            (module) => module.Film,
+          ),
+      },
+    ],
   },
   {
     path: '**',

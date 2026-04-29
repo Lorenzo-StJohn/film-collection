@@ -1,6 +1,7 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BreadcrumbService } from './services/breadcrumb';
+import { Film } from '../../../features/films/service/film';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -10,6 +11,7 @@ import { BreadcrumbService } from './services/breadcrumb';
 })
 export class Breadcrumb {
   private breadcrumbService = inject(BreadcrumbService);
+  private filmService = inject(Film);
   public breadcrumbString = this.breadcrumbService.breadcrumbs;
   private breadcrumbArray = computed(() => this.breadcrumbString().split('/'));
   public breadcrumbs = computed(() => {
@@ -24,6 +26,12 @@ export class Breadcrumb {
             acc.push(['/about', 'About']);
             break;
         }
+      }
+      if (index === 2) {
+        const id = value;
+        const film = this.filmService.getFilmByUrl(id);
+        const title = film ? film.title : 'Not found';
+        acc.push([`/home/${value}`, title]);
       }
       return acc;
     }, initialArray)

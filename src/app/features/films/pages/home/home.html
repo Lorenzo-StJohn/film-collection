@@ -3,7 +3,7 @@
 </header>
 <main class="film-list">
   @for (film of films(); track film.id) {
-    <a [routerLink]="['home', film.id]" class="film-link">
+    <a [routerLink]="film.id.toString()" class="film-link">
       <app-film-card [film]="film" (favToggle)="onFavToggle(film.id,  $event)"/>
     </a>
   }

@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.home-link {
+  color: var(--text-color);
+  transition: var(--transition);
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-link:hover {
+    color: var(--primary-color);
+  }
+}
